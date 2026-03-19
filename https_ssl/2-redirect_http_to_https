@@ -32,7 +32,7 @@ frontend www-http
     redirect scheme https code 301 if !{ ssl_fc }
 
 frontend www-https
-    bind *:443 ssl crt /etc/letsencrypt/live/www.god3v.tech/haproxy.pem
+    bind *:443 ssl crt /etc/letsencrypt/live/www.samueldesigns.tech/haproxy.pem
     reqadd X-Forwarded-Proto:\ https
     default_backend www-backend
 
